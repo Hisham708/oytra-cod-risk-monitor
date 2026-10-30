@@ -1,0 +1,30 @@
+COD DELIVERY RISK: OPERATIONAL REVIEW
+Oytra | Take-home assignment | Analysis of supplied sample
+
+EXECUTIVE SUMMARY
+The supplied file contains 2,018 rows. All 2,018 rows in this sample are labelled COD. Among 2,017 orders with a final Delivered or RTO outcome, 573 are RTO and 1,444 are Delivered, giving an observed RTO rate of 28.4%. The average order value among resolved orders is ₹919. This is a historical sample result, not a forecast of future performance.
+
+WHAT THE DATA SAYS
+• Outcome quality: 1 row(s) have a status other than Delivered/RTO and are excluded from the resolved-order rate denominator.
+• RTO order value: ₹547,264 across the RTO rows. This is gross order value, not lost profit or avoidable cost.
+• Highest observed courier RTO-rate cohorts (minimum group size not imposed): Xpressbees (31.2%, n=397), Ecom Express (30.2%, n=305), BlueDart (28.9%, n=187).
+• Highest observed acquisition-source RTO-rate cohorts: meta_ads (31.3%, n=779), instagram_organic (29.4%, n=235), google_ads (28.0%, n=246).
+Cohort rates are descriptive. Small groups and confounding factors can make rankings unstable; do not penalize a partner or channel based on this sample alone.
+
+RECOMMENDED OPERATING PLAYBOOK
+1. Confirmation before dispatch: send a polite WhatsApp confirmation with order ID, item summary, COD amount and two explicit choices (Confirm / Cancel). Do not dispatch unconfirmed high-risk COD orders until a short response window expires and an agent reviews the case.
+2. Reminder and address validation: send one reminder for non-response, then request a landmark or PIN-code confirmation only when address quality is incomplete. Avoid repeated messages.
+3. Prioritize human review: use the transparent score as a queue, not an automatic rejection. Prior RTO history is the strongest rule; verify identity and context respectfully. Offer prepaid conversion as an optional choice, never as pressure.
+4. Measure fairly: run a 2–4 week controlled pilot. Compare confirmation rate, dispatch cancellation, delivered rate, RTO rate, customer complaints and incremental contribution margin against a control group. Segment results by courier/source only after adequate sample sizes.
+5. Improve data quality: standardize status labels and capture confirmation response, cancellation reason, delivery attempt count, RTO reason and message timestamps.
+
+ILLUSTRATIVE UPSIDE (NOT A PROMISE)
+At a hypothetical 10% relative reduction in the 573 historical RTO count, approximately 57.3 RTOs would be avoided. Multiplying by the historical average order value gives about ₹52,660 in associated order value. This is not profit or cash savings: it excludes product costs, shipping, reverse logistics, discounts, contact costs and whether the orders would otherwise have been recovered.
+
+WHATSAPP MESSAGE EXAMPLES
+Confirmation: “Hi! Your order {order_id} for ₹{amount} is placed with Cash on Delivery. Please reply CONFIRM to proceed or CANCEL if you no longer need it. Thank you!”
+Reminder: “A quick reminder about your COD order {order_id}. Please confirm by {time} so we can prepare your shipment. Reply CONFIRM or CANCEL.”
+These are mock templates only. No WhatsApp API was connected and no messages were sent.
+
+LIMITATIONS & NEXT STEPS
+The file is a historical sample and contains no message-response, delivery-attempt, shipping-cost, margin or RTO-reason fields. The risk score is a transparent heuristic (prior RTO +55; no prior orders +20; top-quartile order value +15; 3+ items +10), not a trained model. Validate the score and pilot design with operations before production use. The dashboard and analysis are intended for decision support, not automated customer blocking.
